@@ -1,0 +1,48 @@
+Guideline 1.1 - Safety - Objectionable Content
+
+
+We found that your app includes content or concepts that some users may find upsetting, offensive, or otherwise objectionable. 
+
+Specifically, your entertainment or gaming app inappropriately references the COVID-19 pandemic in the metadata or binary. Entertainment or gaming apps that directly or indirectly reference the COVID-19 pandemic in any way are not appropriate for the App Store.
+
+Next Steps
+
+While your app’s current content or concept is not appropriate for the App Store, we would welcome a new app from you in alignment with our App Store Review Guidelines that is not focused on or related to the COVID-19 pandemic.
+
+Resources
+
+For additional information regarding Apple’s response to the COVID-19 pandemic, please refer to the Ensuring the Credibility of Health & Safety Information update on the Apple Developer website.
+
+Guidelines 2.3.7 - Performance - Accurate Metadata
+
+
+We found your app’s metadata includes references to the COVID-19 pandemic in keywords. 
+
+However, only apps from recognized institutions providing essential services related to the COVID-19 pandemic should reference the pandemic in their metadata. This ensures that App Store users can easily find apps that provide credible information and response services. Promoting access to relevant, credible apps has always been a priority for us, and it is especially important at this time. 
+
+Next Steps 
+
+To bring your app into compliance with these guidelines, remove all references to the COVID-19 pandemic from your app’s metadata. 
+
+Resources
+
+For additional information regarding Apple’s response to the COVID-19 pandemic, please refer to the Ensuring the Credibility of Health & Safety Information update on the Apple Developer website.
+
+Guideline 4.3 - Design
+
+
+We noticed that your app provides the same feature set as other apps submitted to the App Store; it simply varies in content or language, which is considered a form of spam.
+
+The next submission of this app may require a longer review time, and this app will not be eligible for an expedited review until this issue is resolved.
+
+Next Steps
+
+- Review the Design section of the App Store Review Guidelines.
+- Ensure your app is compliant with all sections of the App Store Review Guidelines and the Terms & Conditions of the Apple Developer Program. 
+- Once your app is fully compliant, resubmit your app for review.
+
+When creating multiple apps where content is the only varying element, you should offer a single app to deliver differing content to customers. If you would like to offer this content for purchase, it would be appropriate to use the in-app purchase API.
+
+Alternatively, you may consider creating a web app, which looks and behaves similar to a native app when the customer adds it to their Home screen. Refer to the Configuring Web Applications section of the Safari Web Content Guide for more information.
+
+Submitting apps designed to mislead or harm customers or evade the review process may result in the termination of your Apple Developer Program account. Review the Terms & Conditions of the Apple Developer Program to learn more about our policies regarding termination.
