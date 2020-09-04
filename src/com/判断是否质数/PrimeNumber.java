@@ -8,8 +8,8 @@ public class PrimeNumber {
 
     public static boolean isPrimeNumber(int n) {
         for (int i = 2; i < n; i++) {
-            if (n%i==0) {
-               return false;
+            if (n % i == 0) {
+                return false;
             }
         }
         return true;
@@ -19,7 +19,7 @@ public class PrimeNumber {
         int j = 97;
         if (isPrimeNumber(j)) {
             System.out.println("j 是质数");
-        }else{
+        } else {
             System.out.println("j 不是质数");
         }
     }
