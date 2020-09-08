@@ -1,4 +1,4 @@
-package com.数据操作;
+package com.数组;
 
 import java.util.LinkedHashSet;
 

@@ -1,6 +1,4 @@
-package com.数据操作;
-
-import java.util.Arrays;
+package com.数组;
 
 /**
  * 基本操作

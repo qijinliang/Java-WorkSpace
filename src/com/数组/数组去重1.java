@@ -1,4 +1,4 @@
-package com.数组基本操作;
+package com.数组;
 
 import java.util.HashSet;
 import java.util.Set;
