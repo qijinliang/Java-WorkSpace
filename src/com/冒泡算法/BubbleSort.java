@@ -5,7 +5,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 //冒泡排序算法的思想
-//我们从左边开始把相邻的两个数两两做比较，当一个元素大于右侧与它相邻的元素时，交换它们之间位置；反之，它们之间的位置不发生变化。冒泡排序是一种稳定的排序算法。
+//我们从左边开始把相邻的两个数两两做比较，当一个元素大于右侧与它相邻的元素时，交换它们之间位置；
+// 反之，它们之间的位置不发生变化。冒泡排序是一种稳定的排序算法。
 public class BubbleSort {
     public static void main(String[] args) {
         System.out.println("输入要排序的值，输入的值每个值用逗号隔开:");
