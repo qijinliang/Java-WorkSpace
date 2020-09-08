@@ -7,22 +7,17 @@ public class MergeSort {
 
     public static void main(String[] args) {
 
-        System.out.println("输入要排序的值，输入的值每个值用逗号隔开:");
-        Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
-        //将字符串按照'，'拆分成字符串数组
-        String[] strArray = str.split(",");
-        //新建数组用来存储拆分出来的每个值
-        int[] array = new int[strArray.length];
-        //给数组循环遍历赋值
-        for (int i = 0; i < strArray.length; i++) {
-            array[i] = Integer.parseInt(strArray[i]);
+        int[] array =  {6, 8, 4, 36, 73, 13, 12, 3, 15, 5, 7, 9};
+        System.out.print("原数组：");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]+" ");
         }
-
-        System.out.println("排序前的数组：" + Arrays.toString(array));
-        //排序
+        System.out.println();
         array = MergeSort(array);
-        System.out.println("排序后的数组：" + Arrays.toString(array));
+        System.out.print("排序之后的数组：");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]+" ");
+        }
     }
 
     /**
