@@ -1,5 +1,7 @@
 package com.队列;
 
+import javax.xml.soap.Node;
+
 public class MyQueue {
     //队列元素
     private int[] array;
@@ -53,6 +55,10 @@ public class MyQueue {
         myqueue.enQueue(5);
         myqueue.enQueue(6);
         myqueue.enQueue(8);
+        myqueue.enQueue(9);
+        myqueue.deQueue();
+        myqueue.deQueue();
+        myqueue.deQueue();
         myqueue.output();
     }
 }
