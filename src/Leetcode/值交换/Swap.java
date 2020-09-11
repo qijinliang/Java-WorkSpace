@@ -1,5 +1,7 @@
 package Leetcode.值交换;
 
+import mj.printer.Strings;
+
 /**
  * 说明
  * 数组array {1,2,3,4} 输入 第一位的值，和第二位的值，进行交换
@@ -9,13 +11,13 @@ public class Swap {
 
     public static void main(String[] args) {
 
-        int[] array = {1, 2, 3, 4};
-        swap(array, 1, 3);
+        int[] array = {1, 1, 9, 2, 5, 3, 4};
+        swap(array, 0, 1);
+
 
         System.out.print(" 反转后  ");
         reverser(array);
     }
-
     private static void swap(int[] array, int a, int b) {
         int temp;
         temp = array[a];

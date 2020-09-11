@@ -68,7 +68,43 @@ public class MyStack {
     // 2. 如果不为空，则比较newNum和stackMin的栈顶元素中哪一个更小
     // 3. 如果newNum更小活着两者相等，则newNum也压入stackMin
     // 4. 如果stackMin中栈顶元素小，则StackMin不压入任何内容
-    public class MyStack2 {
+    public static class MyStack2 {
+
+        private Stack<Integer> stackData;
+        private Stack<Integer> stackMin;
+
+        public MyStack2() {
+            this.stackData = new Stack<Integer>();
+            this.stackMin = new Stack<Integer>();
+        }
+
+
+        public void push(int newNum) {
+            if (this.stackMin.isEmpty()) {
+                this.stackMin.push(newNum);
+            } else if (newNum < this.getmin()) {
+                this.stackMin.push(newNum);
+            } else {
+                int newMin = this.stackMin.peek();
+                this.stackMin.push(newMin);
+            }
+            this.stackData.push(newNum);
+        }
+
+        public int pop() {
+            if (this.stackData.isEmpty()) {
+                throw new RuntimeException("栈为空");
+            }
+            this.stackMin.pop();
+            return this.stackData.pop();
+        }
+
+        public int getmin() {
+            if (this.stackMin.isEmpty()) {
+                throw new RuntimeException("栈为空");
+            }
+            return this.stackMin.peek();
+        }
 
     }
 
@@ -84,6 +120,20 @@ public class MyStack {
         System.out.println(t1.pop() + " 出战");
         System.out.println(t1.pop() + " 出战");
         // 四次出战之后只剩下6和5 所以最小值为5
-        System.out.println("最小值为：" + t1.getmin());
+        System.out.println("MyStack1最小值为：" + t1.getmin());
+
+        System.out.println("======第二种方案======");
+        int[] data2 = {1, 2, 3, 4, 5, 6};
+        MyStack2 t2 = new MyStack2();
+        for (int i = 0; i < data2.length; i++) {
+            t2.push(data2[i]);
+            System.out.println(data2[i] + " 入栈");
+        }
+        System.out.println(t2.pop() + " 出战");
+        System.out.println(t2.pop() + " 出战");
+        System.out.println(t2.pop() + " 出战");
+        System.out.println(t2.pop() + " 出战");
+        // 四次出战之后只剩下6和5 所以最小值为5
+        System.out.println("MyStack2最小值为：" + t2.getmin());
     }
 }
