@@ -89,10 +89,10 @@ public class BinaryTree {
         /** 定义树的结构
          *                 3
          *          2              8
-         *      9       10      nul   4
+         *      9       10      11   4
          * null null null null
          * */
-        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{3, 2, 9, null, null, 10, null, null, 8, null, 4}));
+        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{3, 2, 9, null, null, 10, null, null, 8, 11, 4}));
         TreeNode treeNode = createBinaryTree(inputList);
         System.out.println("前序遍历：");
         preOrderTraveral(treeNode);

@@ -1,4 +1,4 @@
-package com.判断;
+package Leetcode.判断;
 
 /**
  * 思路
