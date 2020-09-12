@@ -17,11 +17,11 @@ public class 是否质数 {
     }
 
     public static void main(String[] args) {
-        int j = 97;
+        int j = 4;
         if (isPrimeNumber(j)) {
-            System.out.println("j 是质数");
+            System.out.println(j + "是质数");
         } else {
-            System.out.println("j 不是质数");
+            System.out.println(j + "不是质数");
         }
     }
 }

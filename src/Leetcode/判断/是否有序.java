@@ -7,7 +7,7 @@ package Leetcode.判断;
 public class 是否有序 {
     public static void main(String[] args) {
         //判断是否有序
-        int[] num = {1,3,4,5,6,7,8,19};
+        int[] num = {1, 3, 4, 5, 6, 7, 8, 19};
         System.out.println(isSorted(num));
     }
 

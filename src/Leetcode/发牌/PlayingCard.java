@@ -20,7 +20,6 @@ public class PlayingCard {
         //玩家四
         String w4[] = new String[13];
         //直到发完为止
-        String d[] = new String[0];
         for (int i = 0; i < w1.length; ) {
             int b2 = (int) (Math.random() * 52);
             // 没有发出去才会进去 发牌
@@ -71,24 +70,11 @@ public class PlayingCard {
 
         }
 
-//        for (int i = 0; i < d.length; ) {
-//            int b2 = (int) (Math.random() * 52);
-//            // 做标记-这张牌已经发出去了
-//            if (!f[b2].equals("已发")) {
-//                // 做标记-这张牌已经发出去了
-//                d[i] = f[b2];
-//                // 做标记-这张牌已经发出去了
-//                f[b2] = "已发";
-//                i++;
-//            }
-//
-//        }
 
         System.out.println("玩家一" + Arrays.toString(w1));
         System.out.println("玩家二" + Arrays.toString(w2));
         System.out.println("玩家三" + Arrays.toString(w3));
         System.out.println("玩家四" + Arrays.toString(w4));
-        System.out.println("查询是否有剩余的牌" + Arrays.toString(d));
     }
 }
 

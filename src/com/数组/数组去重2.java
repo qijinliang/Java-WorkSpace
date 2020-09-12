@@ -15,7 +15,7 @@ public class 数组去重2 {
     }
 
     public static void main(String[] args) {
-        Object[] arrs = {1, 2, 3, 45, 6, 7, 5, 2, 6, 1};
+        Object[] arrs = {1, 2, 3, 7, 6, 7, 5, 2, 6, 1};
         System.out.print("twoClear:");
         printArray(twoClear(arrs));
 

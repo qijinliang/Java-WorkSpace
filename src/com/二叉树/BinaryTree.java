@@ -1,7 +1,6 @@
 package com.二叉树;
 
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Stack;
@@ -48,14 +47,14 @@ public class BinaryTree {
      *
      * @param node 二叉树节点
      */
-    public static void preOrderTraveral(TreeNode node) {
+    public static void perOrderTraversal(TreeNode node) {
         if (node == null) {
             return;
         }
 
         System.out.print(" " + node.data);
-        preOrderTraveral(node.leftChild);
-        preOrderTraveral(node.rightChild);
+        perOrderTraversal(node.leftChild);
+        perOrderTraversal(node.rightChild);
     }
 
     /**
@@ -63,7 +62,7 @@ public class BinaryTree {
      *
      * @param root 二叉树根节点
      */
-    public static void preOrderTraveralWithStack(TreeNode root) {
+    public static void perOrderTraversalWithStack(TreeNode root) {
         Stack<TreeNode> stack = new Stack<TreeNode>();
         TreeNode treeNode = root;
 
@@ -87,13 +86,13 @@ public class BinaryTree {
      *
      * @param node 二叉树节点
      */
-    public static void inOrderTraveral(TreeNode node) {
+    public static void inOrderTraversal(TreeNode node) {
         if (node == null) {
             return;
         }
-        preOrderTraveral(node.leftChild);
+        perOrderTraversal(node.leftChild);
         System.out.print(" " + node.data);
-        preOrderTraveral(node.rightChild);
+        perOrderTraversal(node.rightChild);
     }
 
     /**
@@ -105,8 +104,8 @@ public class BinaryTree {
         if (node == null) {
             return;
         }
-        preOrderTraveral(node.leftChild);
-        preOrderTraveral(node.rightChild);
+        perOrderTraversal(node.leftChild);
+        perOrderTraversal(node.rightChild);
         System.out.print(" " + node.data);
     }
 
@@ -118,16 +117,16 @@ public class BinaryTree {
          *      9       10      11   4
          * null null null null
          * */
-        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(new Integer[]{3, 2, 9, null, null, 10, null, null, 8, 11, 4}));
+        LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(3, 2, 9, null, null, 10, null, null, 8, 11, 4));
         TreeNode treeNode = createBinaryTree(inputList);
         System.out.println("前序遍历：");
-        preOrderTraveral(treeNode);
+        perOrderTraversal(treeNode);
         System.out.println("");
         System.out.println("非递归前序遍历：");
-        preOrderTraveralWithStack(treeNode);
+        perOrderTraversalWithStack(treeNode);
         System.out.println("");
         System.out.println("中序遍历：");
-        inOrderTraveral(treeNode);
+        inOrderTraversal(treeNode);
         System.out.println("");
         System.out.println("后序遍历：");
         postOrderTraveral(treeNode);
