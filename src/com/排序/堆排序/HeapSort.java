@@ -1,6 +1,8 @@
 package com.排序.堆排序;
 
 
+import java.util.Arrays;
+
 /**
  * 将初始待排序关键字序列(R1,R2….Rn)构建成大顶堆，此堆为初始的无序区；
  * 将堆顶元素R[1]与最后一个元素R[n]交换，此时得到新的无序区(R1,R2,……Rn-1)和新的有序区(Rn),且满足R[1,2…n-1]<=R[n]
@@ -13,16 +15,10 @@ public class HeapSort {
     public static void main(String[] args) {
 
         int[] array = {6, 8, 4, 36, 73, 13, 12, 3, 15, 5, 7, 9};
-        System.out.print("原数组：");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
-        System.out.println();
+
+        System.out.println("原始值为 ：" + Arrays.toString(array));
         HeapSort(array);
-        System.out.print("排序之后的数组：");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
+        System.out.println("排序之后 ：" + Arrays.toString(array));
     }
 
     //声明全局变量，用于记录数组array的长度

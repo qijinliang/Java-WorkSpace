@@ -3,6 +3,7 @@ package com.二叉树;
 
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class BinaryTree {
@@ -109,6 +110,26 @@ public class BinaryTree {
         System.out.print(" " + node.data);
     }
 
+    /**
+     * 二叉树层序遍历
+     *
+     * @param root 二叉树跟节点
+     */
+    public static void levelOrderTraversal(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            System.out.print(" " + node.data);
+            if (node.leftChild != null) {
+                queue.offer(node.leftChild);
+            }
+            if (node.rightChild != null) {
+                queue.offer(node.rightChild);
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
         /** 定义树的结构
@@ -130,7 +151,9 @@ public class BinaryTree {
         System.out.println("");
         System.out.println("后序遍历：");
         postOrderTraveral(treeNode);
-
+        System.out.println("");
+        System.out.println("层序遍历：");
+        levelOrderTraversal(treeNode);
 
     }
 
