@@ -48,7 +48,7 @@ public class Heap {
         int childIndex = 2 * parentIndex + 1;
         while (childIndex < length) {
             //如果有右节点，且右节点小于左节点的值，则定位到右节点
-            if (childIndex + 1 < length && array[childIndex] > array[childIndex + 1]) {
+            if (childIndex + 1 < length && array[childIndex] < array[childIndex + 1]) {
                 childIndex++;
             }
             //如果父节点小于任何一个孩子的值，则直接跳出
