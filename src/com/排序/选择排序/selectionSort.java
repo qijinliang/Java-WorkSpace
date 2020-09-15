@@ -1,7 +1,7 @@
 package com.排序.选择排序;
 
 import java.util.Arrays;
-import java.util.Scanner;
+
 
 //工作原理：首先在未排序序列中找到最小（大）元素，
 // 存放到排序序列的起始位置，
@@ -12,16 +12,9 @@ public class selectionSort {
     public static void main(String[] args) {
 
         int[] array =  {6, 8, 4, 36, 73, 13, 12, 3, 15, 5, 7, 9};
-        System.out.print("原数组：");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]+" ");
-        }
-        System.out.println();
-        array = selectionSort(array);
-        System.out.print("排序之后的数组：");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]+" ");
-        }
+        System.out.println("原始值为 ：" + Arrays.toString(array));
+        selectionSort(array);
+        System.out.println("排序之后 ：" + Arrays.toString(array));
     }
 
     /**

@@ -18,16 +18,9 @@ public class ShellSort {
     public static void main(String[] args) {
 
         int[] array =  {6, 8, 4, 36, 73, 13, 12, 3, 15, 5, 7, 9};
-        System.out.print("原数组：");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]+" ");
-        }
-        System.out.println();
+        System.out.println("原始值为 ：" + Arrays.toString(array));
         ShellSort(array);
-        System.out.print("排序之后的数组：");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]+" ");
-        }
+        System.out.println("希尔排序：" + Arrays.toString(array));
     }
 
     /**

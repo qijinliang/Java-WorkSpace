@@ -1,19 +1,10 @@
 package Leetcode.链表.反转双向链表;
+import Leetcode.链表.公共.Node;
 
 public class DoubleNode {
-    public int value;
-
-    public DoubleNode last;
-
-    public DoubleNode next;
-
-    public DoubleNode(int data) {
-        this.value = data;
-    }
-
-    public static DoubleNode revsrseList(DoubleNode head) {
-        DoubleNode pre = null;
-        DoubleNode next = null;
+    public static Node revsrseList(Node head) {
+        Node pre = null;
+        Node next = null;
         while (head != null) {
             next = head.next;
             head.next = pre;
@@ -28,13 +19,13 @@ public class DoubleNode {
      * 测试
      * 创建一个链表
      */
-    public static DoubleNode LinkList() {
-        DoubleNode n1 = new DoubleNode(1);
-        DoubleNode n2 = new DoubleNode(2);
-        DoubleNode n3 = new DoubleNode(3);
-        DoubleNode n4 = new DoubleNode(4);
-        DoubleNode n5 = new DoubleNode(5);
-        DoubleNode n6 = new DoubleNode(6);
+    public static Node LinkList() {
+        Node n1 = new Node(1);
+        Node n2 = new Node(2);
+        Node n3 = new Node(3);
+        Node n4 = new Node(4);
+        Node n5 = new Node(5);
+        Node n6 = new Node(6);
         n1.next = n2;
         n2.next = n3;
         n3.next = n4;
@@ -45,9 +36,9 @@ public class DoubleNode {
 
 
     public static void main(String[] args) {
-        DoubleNode head = LinkList();
-        DoubleNode res = DoubleNode.revsrseList(head);
-        for (DoubleNode cur = res; cur != null; cur = cur.next) {
+        Node head = LinkList();
+        Node res = DoubleNode.revsrseList(head);
+        for (Node cur = res; cur != null; cur = cur.next) {
             System.out.print(" " + cur.value);
         }
     }

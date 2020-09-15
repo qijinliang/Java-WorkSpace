@@ -11,18 +11,16 @@ public class BubbleSort {
     public static void main(String[] args) {
 
         int[] array = {6, 8, 4, 36, 73, 13, 12, 3, 15, 5, 7, 9};
-        int[] array2 = {6, 8, 4, 36, 73, 13, 12, 3, 15, 5, 7, 9};
-        int[] array3 = {6, 8, 4, 36, 73, 13, 12, 3, 15, 5, 7, 9};
-        int[] array4 = {6, 8, 4, 36, 73, 13, 12, 3, 15, 5, 7, 9};
+
         System.out.println("原始值为 ：" + Arrays.toString(array));
         sort(array);
         System.out.println("冒泡排序 ：" + Arrays.toString(array));
-        sort2(array2);
-        System.out.println("冒泡优化2：" + Arrays.toString(array2));
-        sort3(array3);
-        System.out.println("冒泡优化3：" + Arrays.toString(array3));
-        sort4(array4);
-        System.out.println("鸡尾酒排序：" + Arrays.toString(array4));
+        sort2(array);
+        System.out.println("冒泡优化2：" + Arrays.toString(array));
+        sort3(array);
+        System.out.println("冒泡优化3：" + Arrays.toString(array));
+        sort4(array);
+        System.out.println("鸡尾酒排序：" + Arrays.toString(array));
     }
 
 
@@ -32,7 +30,7 @@ public class BubbleSort {
      * @param array
      * @return
      */
-    private static void sort(int[] array) {
+    public static void sort(int[] array) {
         //array.length - 1 是因为最后一轮不需要排序
         for (int i = 0; i < array.length - 1; i++) {
             //array.length - i 是因为每一轮都能确定排序好一个数

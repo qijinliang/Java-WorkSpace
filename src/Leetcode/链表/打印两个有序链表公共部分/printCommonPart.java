@@ -1,5 +1,5 @@
 package Leetcode.链表.打印两个有序链表公共部分;
-
+import Leetcode.链表.公共.Node;
 
 /** 解题思路
  * 如果head1的值小于head2，则head1往下移
@@ -9,17 +9,6 @@ package Leetcode.链表.打印两个有序链表公共部分;
  * */
 
 public class printCommonPart {
-
-    public static class Node {
-        public int value;
-
-        public Node next;
-
-        public Node(int data) {
-
-            this.value = data;
-        }
-    }
 
     public static void printCommonPart(Node head1, Node head2) {
         System.out.println("公共的部分为：");

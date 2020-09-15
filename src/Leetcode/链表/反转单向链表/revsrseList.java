@@ -1,21 +1,14 @@
 package Leetcode.链表.反转单向链表;
 
 
+import Leetcode.链表.公共.Node;
+
 /**
  * 实现反转单向链表
  * 时间复杂度要求O(N)
  */
 public class revsrseList {
 
-    public static class Node {
-        public int value;
-
-        public Node next;
-
-        public Node(int data) {
-            this.value = data;
-        }
-    }
 
     public static Node revsrseList(Node head) {
         Node pre = null;
