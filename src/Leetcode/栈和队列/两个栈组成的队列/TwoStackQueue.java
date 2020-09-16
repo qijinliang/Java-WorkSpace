@@ -1,6 +1,4 @@
 package Leetcode.栈和队列.两个栈组成的队列;
-
-
 import java.util.Stack;
 
 /**

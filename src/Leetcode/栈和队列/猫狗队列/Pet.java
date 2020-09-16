@@ -1,4 +1,4 @@
-package Leetcode.栈和队列.设计一个最小栈.猫狗队列;
+package Leetcode.栈和队列.猫狗队列;
 
 /** 实现要求
  *  1. 用户可以调用add方法将cat类或dog类的实例放入队列中

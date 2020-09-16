@@ -7,7 +7,7 @@ import java.util.Stack;
  * pop push getMin 操作时间复杂度O(1)
  * 设计的栈类型可以使用现成的栈结构
  */
-public class MyStack {
+public class GetMinStack {
 
     /**
      * 解题思路

@@ -11,21 +11,21 @@ import mj.printer.BinaryTrees.PrintStyle;
 public class Main {
 	
 	public static void main(String[] args) {
-		tree1();
+//		tree1();
 		tree2();
-		tree3();
+//		tree3();
 	}
 	
 	static void tree1() {
 		for (BinarySearchTree<Integer> bst : bsts) {
 			// PrintStyle.LEVEL_ORDER（层序打印）
-			BinaryTrees.println(bst); 
-			
+			BinaryTrees.println(bst);
+
 			System.out.println(LINE);
-			
+
 			// PrintStyle.INORDER（中序打印）
 			BinaryTrees.println(bst, PrintStyle.INORDER);
-			
+
 			System.out.println(LINE);
 		}
 	}
@@ -124,7 +124,7 @@ public class Main {
 				7,4,9,2,5,8,11,1,3,6,10,12
 			}));
 		bsts.add(bst(new Integer[]{
-				381, 12, 410, 9, 40, 394, 540, 
+				381, 12, 410, 9, 40, 394, 540,
 				35, 190, 476, 760, 146, 445,
 				600, 800
 			}));
@@ -134,7 +134,7 @@ public class Main {
 		for (int i = 0; i < bstCount; i++) {
 			BinarySearchTree<Integer> bst = new BinarySearchTree<Integer>();
 			bsts.add(bst);
-			
+
 			// 二叉树的节点数量
 			int nodeCount = (int) (10 + Math.random() * 30);
 			for (int j = 0; j < nodeCount; j++) {

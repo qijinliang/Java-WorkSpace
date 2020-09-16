@@ -1,4 +1,4 @@
-package Leetcode.栈和队列.设计一个最小栈.猫狗队列;
+package Leetcode.栈和队列.猫狗队列;
 
 public class PetEnterQueue {
 

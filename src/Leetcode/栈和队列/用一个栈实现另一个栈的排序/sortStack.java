@@ -6,32 +6,6 @@ import java.util.Stack;
  * 只申请一个栈，可以申请新的变量
  */
 public class sortStack {
-
-
-    private final Stack<Integer> stackData;
-    private final Stack<Integer> stackMin;
-
-    public sortStack() {
-        this.stackData = new Stack<Integer>();
-        this.stackMin = new Stack<Integer>();
-    }
-
-    public void push(int newNum) {
-        if (this.stackMin.isEmpty()) {
-            this.stackMin.push(newNum);
-        } else if (newNum <= this.getmin()) {
-            this.stackMin.push(newNum);
-        }
-        this.stackData.push(newNum);
-    }
-    public int getmin() {
-        if (this.stackMin.isEmpty()) {
-            throw new RuntimeException("栈为空");
-        }
-        return this.stackMin.peek();
-    }
-
-
     /**
      * 解题思路
      * 将要排序的栈标记为stack，申请的辅助栈标记为help

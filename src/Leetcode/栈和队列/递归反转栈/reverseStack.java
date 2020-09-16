@@ -1,39 +1,12 @@
 package Leetcode.栈和队列.递归反转栈;
 
 import java.util.Stack;
-
 /**
  * 一个栈依次  1，2，3，4，5
  * 那么从栈顶到栈底分别为5，4，3，2，1
  * 使用递归实现元素的逆序
  */
 public class reverseStack {
-
-
-    private final Stack<Integer> stackData;
-    private final Stack<Integer> stackMin;
-
-    public reverseStack() {
-        this.stackData = new Stack<Integer>();
-        this.stackMin = new Stack<Integer>();
-    }
-
-    public void push(int newNum) {
-        if (this.stackMin.isEmpty()) {
-            this.stackMin.push(newNum);
-        } else if (newNum <= this.getmin()) {
-            this.stackMin.push(newNum);
-        }
-        this.stackData.push(newNum);
-    }
-    public int getmin() {
-        if (this.stackMin.isEmpty()) {
-            throw new RuntimeException("栈为空");
-        }
-        return this.stackMin.peek();
-    }
-
-
 
     /** 设计两个递归函数
      * 递归函数一：将栈stack的栈底元素返回并移除

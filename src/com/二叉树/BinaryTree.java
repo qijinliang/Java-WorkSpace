@@ -1,8 +1,5 @@
 package com.二叉树;
-
-
-import Leetcode.二叉树.打印二叉树.ConstructTree;
-
+import Leetcode.二叉树.公共.TreeNode;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -11,18 +8,6 @@ import java.util.Stack;
 
 public class BinaryTree {
 
-    /**
-     * 二叉树的节点
-     */
-    private static class TreeNode {
-        int data;
-        TreeNode leftChild;
-        TreeNode rightChild;
-
-        TreeNode(int data) {
-            this.data = data;
-        }
-    }
 
     /**
      * 创建二叉树
@@ -40,8 +25,8 @@ public class BinaryTree {
 
         if (data != null) {
             node = new TreeNode(data);
-            node.leftChild = createBinaryTree(inputList);
-            node.rightChild = createBinaryTree(inputList);
+            node.left = createBinaryTree(inputList);
+            node.right = createBinaryTree(inputList);
         }
         return node;
     }
@@ -56,9 +41,9 @@ public class BinaryTree {
             return;
         }
 
-        System.out.print(" " + node.data);
-        perOrderTraversal(node.leftChild);
-        perOrderTraversal(node.rightChild);
+        System.out.print(" " + node.val);
+        perOrderTraversal(node.left);
+        perOrderTraversal(node.right);
     }
 
     /**
@@ -73,14 +58,14 @@ public class BinaryTree {
         while (treeNode != null || !stack.isEmpty()) {
             //迭代访问节点的左节点，并入栈
             while (treeNode != null) {
-                System.out.print(" " + treeNode.data);
+                System.out.print(" " + treeNode.val);
                 stack.push(treeNode);
-                treeNode = treeNode.leftChild;
+                treeNode = treeNode.left;
             }
             //如果节点没有左节点，则弹出栈顶节点，访问节点右节点
             if (!stack.isEmpty()) {
                 treeNode = stack.pop();
-                treeNode = treeNode.rightChild;
+                treeNode = treeNode.right;
             }
         }
     }
@@ -94,9 +79,9 @@ public class BinaryTree {
         if (node == null) {
             return;
         }
-        perOrderTraversal(node.leftChild);
-        System.out.print(" " + node.data);
-        perOrderTraversal(node.rightChild);
+        perOrderTraversal(node.left);
+        System.out.print(" " + node.val);
+        perOrderTraversal(node.right);
     }
 
     /**
@@ -108,9 +93,9 @@ public class BinaryTree {
         if (node == null) {
             return;
         }
-        perOrderTraversal(node.leftChild);
-        perOrderTraversal(node.rightChild);
-        System.out.print(" " + node.data);
+        perOrderTraversal(node.left);
+        perOrderTraversal(node.right);
+        System.out.print(" " + node.val);
     }
 
     /**
@@ -123,12 +108,12 @@ public class BinaryTree {
         queue.offer(root);
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
-            System.out.print(" " + node.data);
-            if (node.leftChild != null) {
-                queue.offer(node.leftChild);
+            System.out.print(" " + node.val);
+            if (node.left != null) {
+                queue.offer(node.left);
             }
-            if (node.rightChild != null) {
-                queue.offer(node.rightChild);
+            if (node.right != null) {
+                queue.offer(node.right);
             }
         }
     }
@@ -141,9 +126,15 @@ public class BinaryTree {
          *      9       10      11   4
          * null null null null
          * */
+
+        // 根据给定的数组创建一棵树
+        TreeNode root = TreeNode.constructTree(new Integer[]{3, 2, 8, 9, 10, 11, 4});
+        // 将刚刚创建的树打印出来
+        root.show(root);
+
         LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(3, 2, 9, null, null, 10, null, null, 8, 11, 4));
         TreeNode treeNode = createBinaryTree(inputList);
-        System.out.println("前序遍历：");
+        System.out.println("前序遍历：");;
         perOrderTraversal(treeNode);
         System.out.println("");
         System.out.println("非递归前序遍历：");

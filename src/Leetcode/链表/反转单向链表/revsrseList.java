@@ -2,6 +2,7 @@ package Leetcode.链表.反转单向链表;
 
 
 import Leetcode.链表.公共.Node;
+import Leetcode.链表.反转双向链表.DoubleNode;
 
 /**
  * 实现反转单向链表
@@ -45,9 +46,9 @@ public class revsrseList {
 
     public static void main(String[] args) {
         Node head = LinkList();
-        Node res = revsrseList.revsrseList(head);
-        for (Node cur = res; cur != null; cur = cur.next) {
-            System.out.print(" " + cur.value);
-        }
+        head.printList(head);
+        Node res = DoubleNode.revsrseList(head);
+        head.printList(res);
+
     }
 }

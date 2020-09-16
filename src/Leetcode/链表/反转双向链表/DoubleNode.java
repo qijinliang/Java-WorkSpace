@@ -1,4 +1,5 @@
 package Leetcode.链表.反转双向链表;
+
 import Leetcode.链表.公共.Node;
 
 public class DoubleNode {
@@ -37,9 +38,8 @@ public class DoubleNode {
 
     public static void main(String[] args) {
         Node head = LinkList();
+        head.printList(head);
         Node res = DoubleNode.revsrseList(head);
-        for (Node cur = res; cur != null; cur = cur.next) {
-            System.out.print(" " + cur.value);
-        }
+        head.printList(res);
     }
 }
