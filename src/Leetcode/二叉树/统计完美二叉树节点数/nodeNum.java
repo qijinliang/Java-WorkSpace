@@ -1,8 +1,7 @@
 package Leetcode.二叉树.统计完美二叉树节点数;
 
 import Leetcode.二叉树.公共.TreeNode;
-import mj.printer.BinaryTreeInfo;
-import mj.printer.BinaryTrees;
+
 
 public class nodeNum {
 

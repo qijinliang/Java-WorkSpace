@@ -1,4 +1,5 @@
 package Leetcode.链表.链表是否有环;
+
 import Leetcode.链表.公共.Node;
 
 public class isCycle {
@@ -16,7 +17,7 @@ public class isCycle {
             p1 = p1.next;
             p2 = p2.next.next;
             if (p1 == p2) {
-             return true;
+                return true;
             }
         }
         return false;

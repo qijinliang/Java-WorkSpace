@@ -63,6 +63,10 @@ public class isPalindromel {
         return true;
     }
 
+    /**
+     * 不需要栈和其他数据结构，只用有限几个变量，其额外空间浮渣度O(1)
+     * 就可以在时间复杂度O(N)内完成所有的过程，也就是满足进阶的要求
+     * */
     private static boolean isPalindrome3(Node head) {
         if (head == null || head.next == null) {
             return true;
