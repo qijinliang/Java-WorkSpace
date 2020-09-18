@@ -127,11 +127,6 @@ public class BinaryTree {
          * null null null null
          * */
 
-        // 根据给定的数组创建一棵树
-        TreeNode root = TreeNode.constructTree(new Integer[]{3, 2, 8, 9, 10, 11, 4});
-        // 将刚刚创建的树打印出来
-        root.show(root);
-
         LinkedList<Integer> inputList = new LinkedList<Integer>(Arrays.asList(3, 2, 9, null, null, 10, null, null, 8, 11, 4));
         TreeNode treeNode = createBinaryTree(inputList);
         System.out.println("前序遍历：");;

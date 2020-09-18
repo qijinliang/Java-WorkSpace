@@ -1,6 +1,11 @@
 package Leetcode.二叉树.是否为平衡二叉树;
 
 import Leetcode.二叉树.公共.TreeNode;
+import mj.example.BinarySearchTree;
+import mj.printer.BinaryTrees;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class isBalance {
 
@@ -32,10 +37,12 @@ public class isBalance {
 
     public static void main(String[] args) {
 
-        // 根据给定的数组创建一棵树
-        TreeNode root = TreeNode.constructTree(new Integer[]{1, 2, 3, 4, 5, 6, 7});
-        // 将刚刚创建的树打印出来
+
+        TreeNode root = TreeNode.constructTree(new Integer[]{5, 4, 8, 11, null, 13, 4, 7, 2, null, null, null, 1});
         root.show(root);
+        System.out.println("---------------------");
         System.out.print(isBalance(root));
     }
+
+
 }

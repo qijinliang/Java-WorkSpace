@@ -1,4 +1,4 @@
-package Leetcode.栈和队列.发牌;
+package Leetcode.其他.发牌;
 
 import java.util.Arrays;
 
