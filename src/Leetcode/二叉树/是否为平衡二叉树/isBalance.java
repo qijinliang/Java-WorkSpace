@@ -1,11 +1,7 @@
 package Leetcode.二叉树.是否为平衡二叉树;
 
 import Leetcode.二叉树.公共.TreeNode;
-import mj.example.BinarySearchTree;
-import mj.printer.BinaryTrees;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class isBalance {
 
