@@ -8,33 +8,24 @@ public class RotateWord {
      * 把chas 看作字符串为"I'm a student" 翻转成"student. a I'm"
      */
     public static void main(String[] args) {
+        String str = "dog Loves pig";
+        System.out.println(new RotateWord().rotateWord(str));
 
-////        // char[] 类型转String类型
-        char[] cs2 = {'d', 'o', 'g', 'L', 'o', 'v', 'e', 's', 'p', 'i', 'g'};
-//        String str2 = String.valueOf(cs2);
-//        System.out.println(str2);
-        rotateWord(cs2);
-        System.out.println(cs2);
+        String str2 = "I'm a student";
+        System.out.println(new RotateWord().rotateWord(str2));
     }
 
-    public static void rotateWord(char[] chas) {
-        if (chas == null || chas.length == 0) {
-            return;
-        }
-        reverse(chas, 0, chas.length - 1);
-        int l = -1;
-        int r = -1;
-        for (int i = 0; i < chas.length; i++) {
-            if (chas[i] != ' ') {
-                l = i == 0 || chas[i - 1] == ' ' ? i : l;
-                r = i == chas.length - 1 || chas[i + 1] == ' ' ? i : r;
-            }
-            if (l != -1 && r != -1) {
-                reverse(chas, l, r);
-                l = -1;
-                r = -1;
+    public static String rotateWord(String str) {
+        char[] arr = str.toCharArray();
+        reverse(arr, 0, arr.length - 1);
+        int begin = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] == ' ') {
+                reverse(arr, begin, i - 1);
+                begin = i + 1;
             }
         }
+        return new String(arr);
     }
 
     public static void reverse(char[] chas, int start, int end) {
