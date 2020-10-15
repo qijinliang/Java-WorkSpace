@@ -1,4 +1,4 @@
-package Leetcode.其他.五行缺一个整数;
+package Leetcode.数组.五行缺一个整数;
 
 public class Main {
 

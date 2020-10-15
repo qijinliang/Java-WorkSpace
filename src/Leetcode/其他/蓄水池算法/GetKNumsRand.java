@@ -1,4 +1,4 @@
-package Leetcode.其他2.蓄水池算法;
+package Leetcode.其他.蓄水池算法;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package Leetcode.其他.无序数组最大相邻差;
+package Leetcode.数组.无序数组最大相邻差;
 
 public class Main {
 

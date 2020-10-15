@@ -1,4 +1,4 @@
-package Leetcode.其他.寻找排列的下一个数;
+package Leetcode.数组.寻找排列的下一个数;
 
 import java.util.Arrays;
 

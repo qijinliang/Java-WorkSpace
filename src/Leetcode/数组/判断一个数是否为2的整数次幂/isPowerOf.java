@@ -1,4 +1,4 @@
-package Leetcode.其他.判断一个数是否为2的整数次幂;
+package Leetcode.数组.判断一个数是否为2的整数次幂;
 
 public class isPowerOf {
 

@@ -1,4 +1,4 @@
-package Leetcode.其他2.数字的英文和中文表达;
+package Leetcode.字符串.数字的英文和中文表达;
 
 public class NumT0 {
 

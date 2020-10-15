@@ -1,4 +1,4 @@
-package Leetcode.其他2.跳跃游戏;
+package Leetcode.其他.跳跃游戏;
 
 
 import java.util.Arrays;

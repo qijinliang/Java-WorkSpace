@@ -1,4 +1,4 @@
-package Leetcode.其他2.从5随机到7随机扩展;
+package Leetcode.数组.从5随机到7随机扩展;
 
 public class RandTo {
 

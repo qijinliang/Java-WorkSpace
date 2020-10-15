@@ -1,4 +1,4 @@
-package Leetcode.其他2.Manacher算法;
+package Leetcode.其他.Manacher算法;
 
 public class ManacherString {
 

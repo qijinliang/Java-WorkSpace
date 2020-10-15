@@ -1,4 +1,4 @@
-package Leetcode.其他2.一行代码求两个数的最大公约数;
+package Leetcode.其他.一行代码求两个数的最大公约数;
 
 public class Gcd {
 

@@ -1,4 +1,4 @@
-package Leetcode.栈和队列.值交换和数组翻转;
+package Leetcode.数组.值交换和数组翻转;
 
 /**
  * 说明

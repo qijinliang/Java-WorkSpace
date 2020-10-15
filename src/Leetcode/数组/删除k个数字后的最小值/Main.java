@@ -1,4 +1,4 @@
-package Leetcode.其他.删除k个数字后的最小值;
+package Leetcode.数组.删除k个数字后的最小值;
 
 public class Main {
 

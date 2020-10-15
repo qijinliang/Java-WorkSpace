@@ -1,4 +1,4 @@
-package Leetcode.其他.最大公约数;
+package Leetcode.数组.最大公约数;
 
 public class getCommonDivisor {
 

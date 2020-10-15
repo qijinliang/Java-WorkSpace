@@ -1,4 +1,4 @@
-package Leetcode.其他2.翻转字符串;
+package Leetcode.字符串.翻转字符串;
 
 public class RotateWord {
 

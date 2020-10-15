@@ -1,4 +1,4 @@
-package Leetcode.其他2.KMP算法;
+package Leetcode.其他.KMP算法;
 
 public class GetindeOf {
 
